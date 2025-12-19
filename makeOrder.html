@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Оформление заказа — Garage 62</title>
+  <link rel="stylesheet" type="text/css" href="style.min.css">
+  <link rel="stylesheet" type="text/css" href="order.css">
+  <link rel="icon" type="image/x-icon" href="images/62.png">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="images/icon.png" alt="Garage 62"> | Garage 62
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html" class="nav-btn">Главная</a>
+      <a href="cars.html" class="nav-btn">В наличии</a>
+    </nav>
+
+    <div class="auth">
+        <a href="order.html" class="cart-btn" title="Текущий заказ">🛒</a>
+
+        <!-- Кнопки для НЕавторизованного -->
+        <div id="authButtons">
+          <a href="login.html" class="btn ghost">Войти</a>
+          <a href="reg.html" class="btn">Зарегистрироваться</a>
+        </div>
+
+        <!-- Информация для авторизованного -->
+        <div id="userInfo" class="user-info" style="display:none">
+          <span id="userName"></span>
+          <span id="userRole"></span>
+          <button id="logoutBtn" class="btn ghost">Выйти</button>
+        </div>
+    </div>
+  </div>
+</header>
+
+<main class="container order-container">
+
+  <div class="order-header">
+    <h1>Оформление заказа</h1>
+    <p>Завершите оформление заказа в несколько простых шагов</p>
+
+    <div class="order-steps">
+      <div class="step completed">
+        <div class="step-number">1</div>
+        <p>Корзина</p>
+      </div>
+      <div class="step completed">
+        <div class="step-number">2</div>
+        <p>Оформление</p>
+      </div>
+    </div>
+  </div>
+
+  <!--корзина-->
+  <section class="cart-items" id="cartItems">
+    <h2>
+      Выбранные автомобили (<span id="cartCount">0</span>)
+    </h2>
+    <div id="cartItemsContainer">
+      <!-- JS сюда будет добавлять товары -->
+    </div>
+  </section>
+
+  <!-- Секция с информацией о готовности -->
+  <section class="delivery-notification">
+    <div class="delivery-info">
+      <div class="delivery-icon">🚗</div>
+      <h3>Заказ оформлен! Автомобиль готов к выдаче</h3>
+      <p>Поздравляем с успешным оформлением заказа! Ваш автомобиль уже ожидает вас.</p>
+      
+      <div class="delivery-details">
+        <div class="detail-item">
+          <strong>🏢 Адрес дилерского центра:</strong>
+          <p>г. Рязань, ул. Пушкина, стр. 1</p>
+        </div>
+        
+        <div class="detail-item">
+          <strong>🕒 Часы работы:</strong>
+          <p>Пн-Пт: 9:00-20:00<br>Сб-Вс: 10:00-18:00</p>
+        </div>
+        
+        <div class="detail-item">
+          <strong>⚠️ Что взять с собой:</strong>
+          <p>Паспорт и документ, подтверждающий оплату</p>
+        </div>
+      </div>
+      
+      <div class="delivery-instruction">
+        <p><strong>Инструкция по получению:</strong></p>
+        <ol>
+          <li>Приезжайте в дилерский центр в рабочее время</li>
+          <li>Подойдите к стойке администратора</li>
+          <li>Назовите номер вашего заказа</li>
+          <li>Предъявите документы для проверки</li>
+          <li>Получите ключи и документы на автомобиль</li>
+        </ol>
+      </div>
+      
+      <div class="delivery-note">
+        <p><em>Благодарим за выбор Garage 62! Ждем вас для получения автомобиля.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!--итог-->
+  <aside class="order-summary">
+    <h2>Итог заказа</h2>
+
+    <div class="summary-row">
+      <span>Стоимость заказа:</span>
+      <span id="sumPrice">$0</span>
+    </div>
+
+    <div class="summary-row">
+      <span>Доставка:</span>
+      <span id="deliveryCost">$0</span>
+    </div>
+
+    <div class="summary-row">
+      <span>Страховка (1 год):</span>
+      <span id="insurance">$0</span>
+    </div>
+
+    <div class="summary-row">
+      <span>Таможенное оформление:</span>
+      <span id="customs">$0</span>
+    </div>
+
+    <div class="summary-row summary-total">
+      <span>Общая сумма:</span>
+      <span id="total">$0</span>
+    </div>
+
+    <div class="order-actions">
+      <a href="cars.html" class="btn-back">← Вернуться к покупкам</a>
+    </div>
+  </aside>
+</main>
+<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="main.min.js"></script>
+</body>
+</html>

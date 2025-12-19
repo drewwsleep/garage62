@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Porsche 911 GT3 RS",
+    "price": 241300,
+    "images": ["gt3_1.jpg", "gt3_2.jpg", "gt3_3.jpg"]
+  },
+  {
+    "id": 2,
+    "title": "Ferrari F40",
+    "price": 3250990,
+    "images": ["F40_1.jpg", "F40_2.jpg", "F40_3.jpg"]
+  },
+  {
+    "id": 3,
+    "title": "Lada Niva Bronto",
+    "price": 18000,
+    "images": ["niva_1.jpg", "niva_2.jpg", "niva_3.jpg"]
+  },
+  {
+    "id": 4,
+    "title": "Porsche Cayman GT4",
+    "price": 228145,
+    "images": ["gt4_1.jpg", "gt4_2.jpg", "gt4_3.jpg"]
+  },
+  {
+    "id": 5,
+    "title": "Nissan GT-R Nismo R34",
+    "price": 662208,
+    "images": ["GTR34_1.jpg", "GTR34_2.jpg", "GTR34_3.jpg"]
+  },
+  {
+    "id": 6,
+    "title": "BMW M3 Touring",
+    "price": 108700,
+    "images": ["m3_1.jpg", "m3_2.jpg", "m3_3.jpg"]
+  },
+  {
+    "id": 7,
+    "title": "Mercedes AMG GT",
+    "price": 409600,
+    "images": ["Benz_1.jpg", "Benz_2.jpg", "Benz_3.jpg"]
+  },
+  {
+    "id": 8,
+    "title": "Lada Granta Sport",
+    "price": 19000,
+    "images": ["granta_1.jpg", "granta_2.jpg", "granta_3.jpg"]
+  },
+  {
+    "id": 9,
+    "title": "Mazda MX-5 IV(ND)",
+    "price": 32600,
+    "images": ["mazda_1.jpg", "mazda_2.jpg", "mazda_3.jpg"]
+  }
+]

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>В наличии — Garage 62</title>
+  <link rel="stylesheet" type="text/css" href="style.min.css">
+  <link rel="icon" type="image/x-icon" href="images/62.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="images/icon.png" alt="Garage 62"> | Garage 62</a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-btn">Главная</a>
+        <a href="cars.html" class="nav-btn active">В наличии</a>
+        <a href="#contacts" class="nav-btn">Контакты</a>
+      </nav>
+      
+      <div class="auth">
+        <a href="order.html" class="cart-btn" title="Текущий заказ">🛒</a>
+
+        <!-- Кнопки для НЕавторизованного -->
+        <div id="authButtons">
+          <a href="login.html" class="btn ghost">Войти</a>
+          <a href="reg.html" class="btn">Зарегистрироваться</a>
+        </div>
+
+        <!-- Информация для авторизованного -->
+        <div id="userInfo" class="user-info" style="display:none">
+          <span id="userName"></span>
+          <span id="userRole"></span>
+          <button id="logoutBtn" class="btn ghost">Выйти</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <aside class="filters panel">
+      <h3>Ключевые слова</h3>
+      <div class="keywords">
+        <input type="text" placeholder="Введите слово...">
+        <button class="add-btn">Добавить</button>
+      </div>
+
+      <div class="filter-row">
+        <label><input type="checkbox"> Подогрев сидений</label>
+        <label><input type="checkbox"> AWD</label>
+        <label><input type="checkbox"> МКПП</label>
+      </div>
+
+      <h3>Стоимость</h3>
+      <div class="price-filter">
+        <div class="price-values">
+          <span>$10 000</span>
+          <span>$5 000 000</span>
+        </div>
+        <input type="range" min="10000" max="200000" value="100000">
+      </div>
+
+      <details class="dropdown">
+        <summary>Цвет ▾</summary>
+        <div class="dropdown-list">
+          <label><input type="checkbox"> Чёрный</label>
+          <label><input type="checkbox"> Красный</label>
+          <label><input type="checkbox"> Тёмно-синий</label>
+        </div>
+      </details>
+
+      <details class="dropdown">
+        <summary>Дополнительные услуги ▾</summary>
+        <div class="dropdown-list">
+          <label><input type="checkbox"> Алькантара</label>
+          <label><input type="checkbox"> Карбон пакет</label>
+          <label><input type="checkbox"> Двухсоставные кованые диски</label>
+        </div>
+      </details>
+      <button class="pick-up-the-car">Подобрать авто</button>
+    </aside>
+
+    <section class="content">
+      <div class="search-row">
+        <div class="search">
+          <input type="search" placeholder="Поиск">
+          <button class="icon-btn">🔍︎</button>
+        </div>
+        <div class="sort">
+          <button class="chip active">Новые</button>
+          <button class="chip">Дешевле</button>
+          <button class="chip">Дороже</button>
+        </div>
+      </div>
+
+      <div class="products-grid">
+        <!-- Здесь будут карточки автомобилей--> 
+      </div>
+
+      <div class="page-footer">
+        <div class="company">
+          <h6>О компании</h6>
+          <ul>
+            <li>Наша команда</li>
+            <li>Проекты</li>
+            <li>Вопрос-ответ</li>
+            <li>Отзывы</li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <a name="contacts"></a>
+          <h6>Контакты</h6>
+          <p>Адрес: г.Рязань, ул.Пушкина, стр.1</p>
+          <p>Телефон: 62-62-62</p>
+          <p>Email: garage62@mail.ru</p>
+          <p>Telegram: @garage62</p>
+          <p>VK: @garage62</p>
+        </div>
+        <div class="map">
+          <h6>Схема проезда</h6>
+          <img src="images/map.jpg" alt="Map" class="map-img">
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="main.min.js"></script>
+</body>
+</html>
