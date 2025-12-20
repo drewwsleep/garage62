@@ -4,7 +4,7 @@
     "title": "Porsche 911 GT3 RS",
     "price": 241300,
     "images": ["gt3_1.jpg", "gt3_2.jpg", "gt3_3.jpg"],
-    "color": "Красный",
+    "color": "Серый",
     "keywords": ["sport", "track", "porsche"],
     "features": ["AWD"],
     "services": ["Карбон пакет", "Алькантара"]
